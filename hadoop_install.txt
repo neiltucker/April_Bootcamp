@@ -7,12 +7,13 @@ apt autoremove --purge
 apt update -y | apt upgrade -y
 
 # Configure SSH
-cd
+cd ~
 ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 0600 ~/.ssh/authorized_keys
 
 # Download Hadoop
+cd ~
 mkdir hadoop
 cd hadoop/
 wget https://downloads.apache.org/hadoop/common/hadoop-3.3.2/hadoop-3.3.2.tar.gz
