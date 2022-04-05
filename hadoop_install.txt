@@ -103,7 +103,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 </property>
 
 
-# Format the NameNode
+# Format the NameNode (answer yes (y) to formatting prompt)
 hdfs namenode -format
 
 # Start the Hadoop Services and verify they are running
