@@ -7,6 +7,7 @@ sudo su
 apt update -y | apt upgrade -y
 
 # Install and verify OpenJDK 8
+cd ~
 sudo apt install openjdk-8-jdk -y
 java -version; javac -version
 
