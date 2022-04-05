@@ -1,4 +1,5 @@
 ###  Hadoop Installation
+###  Do this from a new terminal window
 # PS1="\u@\h:\w\$ "
 
 # Connect as super user (root)
