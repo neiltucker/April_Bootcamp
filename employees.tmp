@@ -11,7 +11,7 @@ CREATE TABLE [dbo].[Employees] (
 [LastName] [nvarchar](50) NULL,
 [FirstName] [nvarchar](50) NULL,
 [HireDate] [nvarchar](50) NULL,
-[HireTime] [int] NULL)
+[HireTime] [nvarchar](50) NULL)
 
 GO
 BULK INSERT dbo.Employees 
