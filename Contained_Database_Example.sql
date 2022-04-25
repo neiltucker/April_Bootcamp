@@ -8,7 +8,10 @@ EXEC sp_configure 'contained database authentication', 1
 GO
 RECONFIGURE
 GO
- 
+
+ALTER DATABASE [Demo6] SET CONTAINMENT = PARTIAL WITH NO_WAIT
+GO
+
 SELECT containment,name FROM sys.databases
 GO
 
