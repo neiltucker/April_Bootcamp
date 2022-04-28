@@ -22,9 +22,9 @@ cursorsrv.close()
 connsrv.commit()
 
 conndb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="password",
+    host="mysql202204.ccfdrvwpyoj1.us-east-1.rds.amazonaws.com",
+    user="sqllogin1",
+    password="Password1",
     database="db01")
 
 cursordb = conndb.cursor()
