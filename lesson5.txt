@@ -1,0 +1,57 @@
+### Python Repo: https://github.com/neiltucker/python_tutorial
+### python -m pip install requests
+### pip install mysql-connector-python
+### download customerdata.csv and orderdata.csv
+
+import mysql.connector
+
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="password",
+    database="wwproducts",
+    auth_plugin = "mysql_native_password")
+###
+
+import socket
+
+# Server
+server = socket.socket(socket.AF_NET, socket.SOCK_STREAM)
+host = 'localhost'
+port= 8000
+server.bind(host, port)
+server.listen(5)
+client, addr = server.accept()
+
+# Client
+import socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+host = socket.gethostbyname(“localhost”)
+port = 8000
+s.connect((host, port))
+
+# Serialization
+output = str.encode(json.dumps(data))
+client.send(output)
+data = client.recv(1024)
+text = json.loads(bytes.decode(data))
+
+output = str.encode(json.dumps(data))
+client.send(output)
+
+data = client.recv(1024)
+text = json.loads(bytes.decode(data))
+
+getprice = requests.get("http://127.0.0.1:5000/prices")
+tmpprices = json.loads(getprice.text)
+self.prices = tmpprices["prices"]
+
+ship=self.ship.get()
+total=float(self.total)
+send={'ship': ship, 'total': total}
+posttotal = requests.post("http://127.0.0.1:5000/submit", json = send)
+
+
+
+
+

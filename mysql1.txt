@@ -33,10 +33,10 @@ cursordb.execute(sql)
 
 for row in customer_data.itertuples():
     print( (row.CustomerID, row.FirstName, row.LastName, row.Phone, row.Street, row.City, row.State))
-    cursor.execute("INSERT INTO sample_customer (CustomerID, FirstName, LastName, Phone, Street, City, State) VALUES (%s,%s,%s,%s,%s,%s,%s)", 
+    cursordb.execute("INSERT INTO sample_customer (CustomerID, FirstName, LastName, Phone, Street, City, State) VALUES (%s,%s,%s,%s,%s,%s,%s)", 
                     (row.CustomerID, row.FirstName, row.LastName, row.Phone, row.Street, row.City, row.State))
 
-cursor.execute("SELECT * FROM sample_customer")
+cursordb.execute("SELECT * FROM sample_customer")
 query1 = cursordb.fetchall()
 cursordb.close()
 conndb.commit()
