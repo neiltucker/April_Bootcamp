@@ -3,7 +3,7 @@
 ### pip install mysql-connector
 ### download customerdata.csv and orderdata.csv
 
-### mysql -uroot -ppassword | mysql -uroot -p
+### mysql -h localhost -u root -ppassword 
 
 import os
 os.path.isdir("c:/tmp")
