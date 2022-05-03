@@ -62,26 +62,32 @@ plt.show()
 ===   
 import pyodbc, pandas as pd
 
-connection = pyodbc.connect('Driver={SQL Server};' 
-                      'Server=DESKTOP-QNHJ5Q7\SQLEXPRESS;'
-                      'Database=db1;'
-                      'Trusted_Connection=yes;')
+conn_string = "Driver={SQL Server}; Server=DESKTOP-QNHJ5Q7\SQLEXPRESS; Trusted_Connection=yes;"
+connsrv = pyodbc.connect(conn_string)
+connsrv.autocommit = True
 
-query = pd.read_sql_query("""SELECT * FROM customers""", connection)
+cursorsrv = connsrv.cursor()
+sql = "CREATE DATABASE db11"
+cursorsrv.execute(sql)
+cursorsrv.close()
+connsrv.commit()
+connsrv.close()
+
+
+conndb_string = "Driver={SQL Server}; Server=DESKTOP-QNHJ5Q7\SQLEXPRESS; Trusted_Connection=yes; Database=db2;"
+conndb = pyodbc.connect(conndb_string)
+
+cursordb = conndb.cursor()
+cursordb.execute("SELECT * FROM dbo.customers")
+query = cursordb.fetchall()
 type(query)
-query.head(10)
+query.head()
 
-cursor = connection.cursor()
-cursor.execute('SELECT TOP 100 * FROM customers')
-# cursor.fetchall()
+cursordb.close()
+conndb.close()
 
-for i in cursor:
-    print(i)
-
-cursor.close()
-connection.close()
-
-===   
+======
+======
 
 ### READ_SQL_QUERY (PARAMETERS):
 import pyodbc, pandas as pd
