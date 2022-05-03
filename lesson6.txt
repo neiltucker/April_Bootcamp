@@ -81,7 +81,7 @@ cursordb = conndb.cursor()
 cursordb.execute("SELECT * FROM dbo.customers")
 query = cursordb.fetchall()
 type(query)
-query.head()
+query
 
 cursordb.close()
 conndb.close()
