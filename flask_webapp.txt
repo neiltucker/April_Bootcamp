@@ -4,7 +4,7 @@ app = Flask(__name__, static_url_path='', static_folder='website')
 @app.route("/")
 @app.route("/website")
 def website():
-    return app.send_static_file('test.html')
+    return app.send_static_file('test.html')     # test.html will be in the "webiste" folder defined above.
 
 @app.route("/contactus")
 def contactus():
