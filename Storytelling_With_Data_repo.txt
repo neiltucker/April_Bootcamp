@@ -1,0 +1,186 @@
+Generate your own fictitious data for analysis:
+https://github.com/neiltucker/April_Bootcamp/blob/main/RandomizedCustomerTable.py
+https://github.com/neiltucker/April_Bootcamp/blob/main/RandomizedOrderdataTable.py
+
+GitHub Public Datasets:
+https://github.com/awesomedata/awesome-public-datasets
+
+Tableau - Free Public Data Sets for Analysis:
+https://www.tableau.com/learn/articles/free-public-data-sets
+
+Tableau Public Edition:
+https://public.tableau.com/en-us/s/download
+
+Tableau Online Account:
+https://www.tableau.com/products/cloud-bi
+
+Chart Guide: 
+https://www.storytellingwithdata.com/chart-guide
+
+Book Images: https://www.storytellingwithdata.com/book/downloads
+Chart Guide: https://www.storytellingwithdata.com/chart-guide
+
+
+1. Tables: https://www.storytellingwithdata.com/blog/2020/9/24/what-is-a-table
+"structures that organize data into rows and columns"
+Pros:
+Easy to build
+Works with any type of data
+Good support for charts
+Shows detailed information
+Cons:
+Slower to understand vs visual data presentation methods
+Limited usefulness in representing large datasets in presentations
+
+
+2. Line Graph: https://www.storytellingwithdata.com/blog/2020/3/24/what-is-a-line-graph
+"uses lines to show how data values change over time."
+Pros:
+Easy to understand
+Show trending / forecasting data
+Highlight anomalies
+Cons:
+Not best for displaying quantities
+Better options for showing categorical data
+Showing data subsets
+
+
+3. Bar Chart: https://www.storytellingwithdata.com/blog/2020/2/19/what-is-a-bar-chart
+"used to graphically represent grouped or categorical data"
+Pros:
+Easy to read
+Widely used
+Display same data in different formats
+Display relative proportions for categories
+Summarize large datasets
+Cons:
+Easy to manipulate
+May oversimplify data
+
+
+4. Pie Chart: https://www.storytellingwithdata.com/blog/2020/5/14/what-is-a-pie-chart
+"pie charts use a segmented circle to show a part-to-whole relationship between categories in a dataset"
+Pros:
+Demonstrate relative size of data segments
+Works well with datasets that have few categories
+Cons:
+Many categories reduce the useful of the chart
+
+
+5. Heat Maps: https://en.wikipedia.org/wiki/Heat_map
+"graphical representation of data that uses colors to show relative data values"
+Pros:
+Easy to demonstrate conclusions
+Can demonstrate trends
+Summarize large datasets
+Can be combined with other chart types (e.g. Maps or Bar Charts)
+Quickly identify areas of interest
+Cons:
+Color schemes can be misleading
+
+
+6. Maps: https://docs.tibco.com/pub/spotfire/7.0.1/doc/html/map_60/map_60_what_is_a_map_chart.htm
+"show the geographic context for data" 
+Pros:
+Shows how location affects data distribution
+Easily compare activity in different locations
+Easily understood by audiences
+Cons:
+Only one field can be plotted per map
+
+
+7. Treemaps: https://www.anychart.com/chartopedia/chart-type/treemap/
+"Show the relative size of different elements in a dataset by using nested, colored, rectangles"
+Pros:
+Easily see size differences between elements in a dataset
+Allows the use of multiple data elements
+Efficiently uses space in the chart
+Cons:
+Size distortions are possible
+Limited useful when precise comparisons are needed
+
+
+8. Circle View: https://interworks.com/blog/ccapitula/2014/10/17/tableau-essentials-chart-types-circle-view/
+"Uses symbols (like circles) to represent and compare categories of data using multiple data measures"
+Pros:
+Include multiple measures in a chart to analyze data
+Quickly find useful data points for further analysis
+Uses size and color to make data elements stand out
+Cons:
+May become too complicated
+Too many data elements may obscure important information
+
+
+9. Scatter Plot: https://interworks.com/blog/ccapitula/2014/11/21/tableau-essentials-chart-types-scatter-plot
+"Finds patterns by examining two data measures"
+Pros:
+Uses multiple measures to analyze data
+Can quickly illustrate correlations in data
+Cons:
+Only two variables can be used
+Correlations found cannot be measured quantitatively in the chart
+
+
+10. Histogram: https://interworks.com/blog/ccapitula/2014/11/26/tableau-essentials-chart-types-histogram
+"Uses a bar chart to show the distribution of a data measure"
+Pros:
+Only a single measure is needed
+The value of the data can be enhanced by adding other data elements
+Cons:
+Using only a single measure may scew results and interpretations
+The results depend largerly on the number of data segments (bins) the measure is divided into
+
+
+11. Box Plott: https://towardsdatascience.com/understanding-boxplots-5e2df7bcbd51
+"Graphically shows the variability and dispersion of data in one or more datasets.
+Pros:
+Summarizes variations in large datasets
+Quickly illustrates how data is distributed, including outliers
+Cons:
+Outlier information can be misinterpreted
+Clusters in the dataset may not be obvious in the graph
+
+
+12. Gantt Chart: https://interworks.com/blog/ccapitula/2014/12/18/tableau-essentials-chart-types-gantt-chart
+"Used to visualize schedules for tasks.  Often used in project management."
+Pros:
+Easily see how long a task will take
+Makes planning related tasks easier
+Easily see how changes in one task will affect others
+Cons:
+Too many tasks make them too complex to understand
+Actual hours worked not accurately represented in the chart
+
+
+13. Bullet Graph: https://interworks.com/blog/ccapitula/2014/12/29/tableau-essentials-chart-types-bullet-graph
+"A type of bar chart which uses indicators to show progress toward a goal.  Used mainly for performance data."
+Pros:
+Quickly indicate progress toward to a goal
+Can be used to compare progress of multiple measures
+Cons:
+Too much data may distract users
+
+
+14. Bubble Charts: https://interworks.com/blog/ccapitula/2015/01/06/tableau-essentials-chart-types-packed-bubbles
+"A type of scatter plot that uses uses three or more data measures"
+Pros:
+Use three or more data elements in a single graph
+Easy to understand
+Cons:
+Exact values may be difficult to read
+Too many data points may make the chart too complex to understand
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
